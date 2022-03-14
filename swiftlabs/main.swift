@@ -7,7 +7,26 @@
 
 import Foundation
 
+
+
 //task1
+//let a: Int = Int(readLine() ?? "") ?? 0
+//let b: Int = Int(readLine() ?? "") ?? 0
+//print(a+b)
+
+//task2
+var numbers = [
+"ноль",
+"один",
+"два",
+"три",
+"четыре",
+"пять",
+"шесть",
+"семь",
+"восемь",
+"девять",
+]
 let a: Int = Int(readLine() ?? "") ?? 0
-let b: Int = Int(readLine() ?? "") ?? 0
-print(a+b)
+let value = numbers[a]
+print(value)
