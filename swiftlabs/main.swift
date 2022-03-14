@@ -7,5 +7,7 @@
 
 import Foundation
 
-print("Hello, World!")
-
+//task1
+let a: Int = Int(readLine() ?? "") ?? 0
+let b: Int = Int(readLine() ?? "") ?? 0
+print(a+b)
