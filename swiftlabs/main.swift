@@ -32,15 +32,31 @@ import Foundation
 //print(value)
 
 //task3
-var n1 = 0
-var n2 = 1
-var summa = 0
-let n: Int = Int(readLine() ?? "") ?? 0
-var i = 0
-while i < n - 2 {
-    summa = n1 + n2
-    n1 = n2
-    n2 = summa
-    i = i + 1
+//var n1 = 0
+//var n2 = 1
+//var summa = 0
+//let n: Int = Int(readLine() ?? "") ?? 0
+//var i = 0
+//while i < n - 2 {
+//    summa = n1 + n2
+//    n1 = n2
+//    n2 = summa
+//    i = i + 1
+//}
+//print(n2)
+
+//task4
+
+let a = Double(readLine() ?? "") ?? 0
+let b = Double(readLine() ?? "") ?? 0
+let c = Double(readLine() ?? "") ?? 0
+
+if a+b == c{
+    print("=")
+}else if a+b < c{
+    print("<")
+}else if a+b > c{
+    print(">")
+}else {
+    print("ERROR")
 }
-print(n2)
