@@ -100,16 +100,26 @@ import Foundation
 //}
 
 //task8
-let n :Int = Int(readLine() ?? "") ?? 0
-var contacts = [String:String]()
+//let n :Int = Int(readLine() ?? "") ?? 0
+//var contacts = [String:String]()
+//let const = 0
+//for _ in const..<n {
+//    let name = readLine() ?? ""
+//    let number = readLine() ?? ""
+//    contacts[name] = number
+//}
+//for (name,number) in contacts {
+//    print(name)
+//    print(number)
+//}
+
+//task9
+let n: Int = Int(readLine() ?? "") ?? 0
+var numbs = [String]()
 let const = 0
 for _ in const..<n {
-    let name = readLine() ?? ""
-    let number = readLine() ?? ""
-    contacts[name] = number
+    numbs.append(readLine() ?? "")
 }
-for (name,number) in contacts {
-    print(name)
-    print(number)
+[numbs.sorted(), numbs].flatMap{$0}.forEach{
+    print($0)
 }
-
