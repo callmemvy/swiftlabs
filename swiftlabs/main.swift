@@ -46,17 +46,27 @@ import Foundation
 //print(n2)
 
 //task4
+//let a = Double(readLine() ?? "") ?? 0
+//let b = Double(readLine() ?? "") ?? 0
+//let c = Double(readLine() ?? "") ?? 0
+//if a+b == c{
+//    print("=")
+//}else if a+b < c{
+//    print("<")
+//}else if a+b > c{
+//    print(">")
+//}else {
+//    print("ERROR")
+//}
 
-let a = Double(readLine() ?? "") ?? 0
-let b = Double(readLine() ?? "") ?? 0
-let c = Double(readLine() ?? "") ?? 0
-
-if a+b == c{
-    print("=")
-}else if a+b < c{
-    print("<")
-}else if a+b > c{
-    print(">")
-}else {
-    print("ERROR")
+//task5
+let a = readLine() ?? "l"
+let s = readLine() ?? ""
+switch a {
+    case "l":
+        print(s.lowercased())
+    case "u":
+        print(s.uppercased())
+    default:
+        break
 }
