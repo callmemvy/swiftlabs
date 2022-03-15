@@ -85,16 +85,31 @@ import Foundation
 //}
     
 //task7
-let n: Int = Int(readLine() ?? "") ?? 0
-var names = Set<String>()
+//let n: Int = Int(readLine() ?? "") ?? 0
+//var names = Set<String>()
+//let const = 0
+//for _ in const..<n {
+//    names.insert(readLine() ?? "")
+//}
+//let m: Int = Int(readLine() ?? "") ?? 0
+//for _ in const..<m {
+//    let name = readLine() ?? ""
+//    if !names.contains(name) {
+//        print(name)
+//    }
+//}
+
+//task8
+let n :Int = Int(readLine() ?? "") ?? 0
+var contacts = [String:String]()
 let const = 0
 for _ in const..<n {
-    names.insert(readLine() ?? "")
-}
-let m: Int = Int(readLine() ?? "") ?? 0
-for _ in const..<m {
     let name = readLine() ?? ""
-    if !names.contains(name) {
-        print(name)
-    }
+    let number = readLine() ?? ""
+    contacts[name] = number
 }
+for (name,number) in contacts {
+    print(name)
+    print(number)
+}
+
