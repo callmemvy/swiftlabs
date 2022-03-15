@@ -60,13 +60,28 @@ import Foundation
 //}
 
 //task5
-let a = readLine() ?? "l"
-let s = readLine() ?? ""
-switch a {
-    case "l":
-        print(s.lowercased())
-    case "u":
-        print(s.uppercased())
-    default:
-        break
+//let a = readLine() ?? "l"
+//let s = readLine() ?? ""
+//switch a {
+//    case "l":
+//        print(s.lowercased())
+//    case "u":
+//        print(s.uppercased())
+//    default:
+//        break
+//}
+
+//task6
+let n: Int = Int(readLine() ?? "") ?? 0
+var numbers = [String]()
+let const = 0
+for _ in const..<n {
+    numbers.append(readLine() ?? "")
 }
+numbers
+    .reversed()
+    .forEach { numb in
+        print(numb)
+    }
+    
+
