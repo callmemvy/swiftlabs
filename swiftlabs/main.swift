@@ -72,16 +72,29 @@ import Foundation
 //}
 
 //task6
+//let n: Int = Int(readLine() ?? "") ?? 0
+//var numbers = [String]()
+//let const = 0
+//for _ in const..<n {
+//    numbers.append(readLine() ?? "")
+//}
+//numbers
+//    .reversed()
+//    .forEach { numb in
+//        print(numb)
+//}
+    
+//task7
 let n: Int = Int(readLine() ?? "") ?? 0
-var numbers = [String]()
+var names = Set<String>()
 let const = 0
 for _ in const..<n {
-    numbers.append(readLine() ?? "")
+    names.insert(readLine() ?? "")
 }
-numbers
-    .reversed()
-    .forEach { numb in
-        print(numb)
+let m: Int = Int(readLine() ?? "") ?? 0
+for _ in const..<m {
+    let name = readLine() ?? ""
+    if !names.contains(name) {
+        print(name)
     }
-    
-
+}
